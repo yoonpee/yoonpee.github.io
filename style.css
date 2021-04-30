@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+*{margin: 0;padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f8ede3;
+    
+}
+.header{width: 1180px; margin:0 auto; padding: 0 0 100px; position: relative;  height: 150px;}
+
+.header ul{position: absolute; right:0; top:30px; overflow: hidden; margin-right: 40px;}
+.header ul li{
+    float: left; margin:30px; list-style: none; width: 110px; height: 40px; background:#333; border-radius: 25px;
+    line-height: 40px; text-align: center;
+}
+.header ul li  a{
+    color: #fff; text-decoration: none; display:block;width: 100%; height: 100%;
+}            
+.header ul li:hover{
+    background:#555;
+}
+.container{
+    
+    width: 1180px; margin:0 auto;
+    display: flex;
+}
+.container .left{
+    display: flex;
+    flex-direction: column; justify-content: center;
+}
+.container .left h1{
+    font-size: 45px; font-weight: 300; margin-bottom: 30px;
+    color: #333;    margin-left: 30px;
+    
+}
+.container .left a{
+    width: 150px; height: 60px; background:#333;line-height: 60px;
+    border-radius: 30px; text-align: center; margin-left: 30px;
+    font-size: 20px; color: #fff; text-decoration: none;
+    margin-bottom: 100px;
+    
+}
+.container .left a:hover{
+    background:#555;
+}
+.container .right{
+    max-width: 1100px;
+}
+.container .right img{
+    width: 100%;height: 100%; 
+}
+/* login page */
+
+.log{width: 1180px; margin:0 auto; display: flex; align-items: center; justify-content: center;  margin-top: 50px; margin-bottom: 50px;}
+.log-img{width: 50%; height: 600px; }
+.log-img img{
+        width: 100%; height: 100%; background-position: center; background-size: cover;
+        /* border-top-left-radius: 20px;border-bottom-left-radius: 20px; */border-radius: 20px;border: 1px solid #ddd;; 
+}
+.log-form{width: 50%; display: flex; align-items: center; flex-direction: column; background-color: #fff; height: 600px; padding:40px 30px;
+    /* border-top-right-radius: 20px;border-bottom-right-radius: 20px;}  */border-radius: 20px; border:1px solid #ddd; border-left: 0;}
+.log-form h2{font-size: 30px; margin-bottom: 20px;}
+.form{width: 400px;padding:20px 25px;}
+.form .form-control{margin-bottom: 5px;}
+.form .form-control label{ display: block; font-size: 14px; color:#777; font-family: 'Montserrat', sans-serif;; font-weight: 500; margin-bottom: 5px;}
+.form .form-control input{width: 100%; padding:10px 15px; border:1px solid #777; font-size: 16px; outline: 0; border-radius: 10px;}
+.form .form-control.error input{border:3px solid red;border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
+.form .form-control.success input{border:3px solid green;}
+.form .form-control.valid input{border:3px solid orange;border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
+.form .form-control .small{width: 100%; font-size: 13px; color:#fff; font-family: 'Montserrat', sans-serif;; padding:5px 10px; text-align: right; border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; visibility: hidden;}
+.form .form-control.error .small{visibility: visible; color:#fff; background-color: red;}
+
+.form .form-control.valid .small{visibility: visible; color:#fff; background:orange; }
+.form  .btn{
+    width: 100%;  padding:15px 20px; border-radius: 10px; border: none; background-color: #ccc;
+    font-size: 16px; color:#111; font-weight: 800; cursor: pointer; outline: 0; margin-top: 5px;
+}
+
+@media screen and (max-width:1179px){
+    .header{width: 100%; padding:0 0 100px; margin-bottom: 100px;}
+    .container{width: 100%;}
+    .log{width: 100%; flex-direction: column;}
+    .log-img{margin-bottom: 20px;}
+}
+@media screen and (max-width:890px){
+    .container{display: flex; flex-direction: column;}
+    .container .left{display: flex; justify-self: center; align-items: center;}
+    .container .right{width: 100%;margin-top: -100px;}
+    .log-img{width: 100%;}
+    .log-form{width: 100%;}
+}
+@media screen and (max-width:664px){
+    .header ul li{margin:5px; margin-top:20px;}
+}
